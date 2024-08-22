@@ -28,7 +28,7 @@ const apiKey = "API KEY";
 
 - `index.html`: The main HTML file that contains the structure of the web application.
 - `style.css`: The stylesheet for styling the application, including background effects and responsive design.
-- `app.js`: The JavaScript file responsible for fetching weather data and updating the UI.
+- `script.js`: The JavaScript file responsible for fetching weather data and updating the UI.
 
 ### Live Link : [Breeze](https://shakilofficial.github.io/breeze-daily-weather)
 
