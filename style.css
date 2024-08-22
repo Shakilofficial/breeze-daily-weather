@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
+}
+
+main {
+  width: 360px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex-grow: 1;
+  padding: 12px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+  font-family: "Inter", sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-color: #176b87;
+  outline: none;
+}
+
+form button {
+  padding: 12px;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  background-color: #176b87;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #86b6f6;
+  transform: scale(1.05);
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result .name {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #176b87;
+}
+
+.temperature img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.temperature figcaption {
+  font-size: 3rem;
+  color: #32c4f4;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: #32c4f4;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  border-radius: 12px;
+  width: 80px;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+li i {
+  font-size: 1.7rem;
+  color: #176b87;
+  margin-bottom: 5px;
+}
+
+li span {
+  display: block;
+}
+
+@media (max-width: 400px) {
+  main {
+    width: 90%;
+    padding: 15px;
+  }
+
+  form input,
+  form button {
+    font-size: 14px;
+  }
+
+  .result .name {
+    font-size: 1.8rem;
+  }
+
+  .temperature figcaption {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  li {
+    width: auto;
+  }
+}
