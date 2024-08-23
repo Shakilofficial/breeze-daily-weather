@@ -69,4 +69,4 @@ const apiKey = "API KEY";
 
 ## License
 
-This project is licensed under [mrshakilhossain@outlook.com](mrshakilhossain@outlook.com) .
+©️ This project is licensed under [mrshakilhossain@outlook.com](mrshakilhossain@outlook.com) .
